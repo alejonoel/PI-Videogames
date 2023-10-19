@@ -1,0 +1,51 @@
+.card-contenedor {
+    position: relative;
+    box-sizing: border-box;
+    height: 15rem;
+    margin-bottom: 10px; /* Añade margen inferior para el espacio vertical */
+    background-color: #e8e4d1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.545);
+  }
+  
+.card-contenedor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+.card-contenedor:hover {
+    color: #e8e4d1;
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.545);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+.card-contenedor a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto del elemento padre (card-estilo) */
+  }
+
+.card-estilo {
+    color: #444b4e;
+    opacity: 1;
+    padding: 0rem;
+    max-height: 100px;
+    white-space: pre-wrap; /* Permite que el texto se divida en varias líneas */
+  }
+  
+.card-imagen {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+  }
+
+.card-imagen img {
+    width: 100%; 
+    height: 8rem; 
+  }

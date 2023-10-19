@@ -1,0 +1,9 @@
+.cards-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 1200px; /* Establece el ancho máximo del contenedor de tarjetas */
+    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+    padding: 30px; /* Agrega un espacio interior al contenedor */
+ }

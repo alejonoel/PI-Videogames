@@ -1,0 +1,48 @@
+.landing-cont {
+    position: relative;
+    background-attachment: fixed;
+    background-image: url('../../../public/background.png'); 
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor sin distorsionar */
+    background-position: center; /* Centra la imagen en el contenedor */
+    width: 100%; /* Asegura que el contenedor tenga un ancho del 100% */
+    height: 100vh; /* Asegura que el contenedor tenga una altura del 100% del viewport */
+}
+
+.landing-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    margin-top: 8rem;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    font-size: xx-large;
+}
+
+.landing-link {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    text-decoration: none; /* Elimina la decoración de enlace */
+    background-color: transparent; /* Elimina el fondo del enlace si es necesario */
+    animation: zoom 2s infinite alternate; /* Aplica la animación 'zoom' de 2 segundos de duración de forma infinita */
+  }
+  
+.landing-link img{
+    margin-top: 2rem;
+    width: 180px; /* Ajusta el ancho de la imagen */
+    height: 180px; /* Ajusta la altura de la imagen */
+}
+
+.zoom-container {
+    width: 140px; /* Ancho fijo del contenedor */
+    height: 140px; /* Alto fijo del contenedor */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  }
+
+@keyframes zoom {
+    0% {
+      transform: scale(1); /* Tamaño normal al principio de la animación */
+    }
+    100% {
+      transform: scale(0.9); /* Tamaño aumentado al final de la animación */
+    }
+  }

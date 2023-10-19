@@ -1,0 +1,121 @@
+/* CSS para el contenedor principal del formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto */
+    max-width: 100%; /* Ancho máximo */
+    min-height:88.5vh;
+    overflow: auto; /* Habilita barras de desplazamiento si es necesario */
+  }
+  
+  /* CSS para el formulario */
+  .form {
+    background-color: #333; /* Fondo del formulario */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ancho máximo */
+    max-width: 1000px; /* Ancho máximo */
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+  }
+  
+  /* Nuevas clases para organizar los elementos en dos columnas verticales con espacio entre ellos */
+  .form-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px; /* Espacio vertical entre las filas */
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px; /* Espacio horizontal entre los grupos de elementos */
+  }
+  
+  /* Estilo para los labels */
+  .form-group label {
+    margin-bottom: 1px;
+  }
+  
+  /* Estilo para los campos de entrada */
+  .form-group input[type="text"],
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+  }
+
+  /* Estilo para el campo de fecha */
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+  }
+
+  /* Estilo para el campo "Rating" de tipo número */
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+  }
+
+  /* Estilo para los botones del campo "Rating" de tipo número */
+.form-group input[type="number"]::-webkit-inner-spin-button,
+.form-group input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 2px; /* Espacio alrededor de los botones */
+  width: 20px; /* Ancho de los botones */
+  height: 20px; /* Altura de los botones */
+  border: 1px solid #555; /* Borde de los botones */
+  background-color: #222; /* Color de fondo de los botones */
+  color: #fff; /* Color del contenido de los botones */
+  font-size: 1px; /* Tamaño del texto en los botones */
+}
+
+  
+  /* Estilo para el mensaje de error del campo de fecha */
+  .form-group input[type="date"] + .form-error {
+    color: #ff6b6b; /* Color de error */
+    font-size: 12px;
+  }
+  
+  /* Estilo para los mensajes de error */
+  .form-error {
+    margin-top: -11px;
+    color: #ff6b6b; /* Color de error */
+    font-size: 12px;
+  }
+
+  /* Estilo para el botón de enviar */
+  .form input[type="submit"] {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form input[type="submit"]:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
+  }
+  

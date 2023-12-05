@@ -18,13 +18,10 @@ module.exports = (sequelize) => {
       type: DataTypes.TEXT,
       allowNull: false,
     },
-    platforms: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     image: {
       type: DataTypes.STRING,
       allowNull: false,
+      defaultValue: "https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?cs=srgb&dl=pexels-lucie-liz-3165335.jpg&fm=jpg",
     },
     date: {
       type: DataTypes.DATE,

@@ -4,7 +4,7 @@ import "./cards.css"
 
 const Cards = ({allVideogames}) => {
   return (
-    <div className='cards-cont'>
+    <div className='cards-container'>
       {allVideogames?.map( i => 
           <Card key={i.id} game={i}/> )}
     </div>

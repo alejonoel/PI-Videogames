@@ -1,0 +1,258 @@
+/* Contenedor principal */
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #bc0698cb;
+  }
+  
+/* Lado derecho (título y descripción) */
+.details-content {
+  display: flex;
+  flex-direction: row; /* Alinear los elementos en fila */
+  align-items: flex-start; /* Alinear los elementos en la parte superior */
+}
+
+/* Imagen del juego */
+.details-image-container {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: auto;
+  filter: blur(7px); /* Ajusta el valor de desenfoque según tus preferencias */
+  z-index: 0;
+}
+
+/* Título */
+.details-title {
+  color: beige;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 10px 0;
+  margin-bottom: -1%;
+  text-align: left;
+  position: relative; /* Ajusta la posición para estar sobre la imagen */
+  z-index: 1;
+}
+
+  /* Contenedor de la imagen */
+.details-info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+ 
+/* Imagen del juego */
+.details-image-conta {
+  flex: 2; /* La imagen ocupa un tercio del espacio disponible */
+  width: 100%;
+  margin-right: 20px; /* Espacio entre la imagen y los detalles */
+}
+
+.details-image{
+  width: 100%; 
+  position: relative;
+  z-index: 1;
+  /* flex: 1;
+  position: relative;
+  z-index: 1;
+  width: 15rem; */
+}
+
+/* Detalles (nombre y géneros) */
+.details-details {
+  flex: 2; /* Los detalles ocupan dos tercios del espacio disponible */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Título y géneros */
+.details-title-genres {
+  flex: 2; /* El título y los géneros ocupan dos tercios del espacio disponible */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 18.5rem;
+  background-color: #bc069865;
+  z-index: 1;
+}
+
+.details-genres-rating{
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+  
+/* Descripción del juego */
+.details-description {
+  background-color: #bc069865;
+  color: rgb(255, 255, 255);
+  margin: 20px 0;
+  padding: 20px;
+  text-align: justify;
+  z-index: 2;
+}
+  
+/* Plataformas */
+.details-platforms {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 0;
+  font-weight: bold;
+  z-index: 1;
+}
+  
+.details-platforms h2 {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-bottom: 10px; /* Añade un margen inferior para separar del contenido */
+}
+
+.details-platforms-date {
+  margin-top: 1rem;
+  background-color: #e8c6e154;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+
+  /* Fecha de lanzamiento */
+  .details-date {
+    flex: 1;
+    margin: 10px 0;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  /* Rating */
+  .details-rating {
+    color:white;
+    margin: 6px 0;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  /* Géneros */
+  .details-genres {
+    margin: 06px 0;
+    color: #ffffff;
+    align-items: start;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  /* Lista de géneros */
+  .details-genre-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+  
+  /* Estilo de cada género en la lista */
+  .details-genre-item {
+    background-color: rgba(97, 0, 188, 0.62);
+    align-items: center;
+    color: #ffffff;
+    margin: 5px;
+    padding: 5px 10px;
+    z-index: 1;
+  }
+  
+  /* Plataformas disponibles */
+  .details-platform-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    z-index: 1;
+  }
+  
+  /* Estilo de cada plataforma en la lista */
+  .details-platform-item {
+    font-weight: bold;
+    margin: 5px 0;
+    margin-right: 20px;
+    z-index: 1;
+  }
+  
+  /* Botón de regreso */
+  .details-back-button {
+    margin: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .details-back-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .star-ratings-css {
+    unicode-bidi: bidi-override;
+    color: #495443; /* Cambia el color de las estrellas */
+    position: relative;
+    width: 100px;
+    height: 20px;
+    font-size: 20px;
+  }
+  
+  .star-ratings-css:before {
+    content: '★★★★★';
+    position: absolute;
+    top: 0;
+  }
+  
+  .star-ratings-css-top {
+    color: #ffc107; /* Cambia el color de fondo de las estrellas */
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+  }
+  
+  .star-ratings-css-bottom {
+    z-index: 0;
+  }
+  
+  /* Estilo para el loading */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(19, 2, 75, 0.581); /* Borde claro */
+  border-top: 4px solid #e91f5b; /* Borde azul */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite; /* Animación de giro */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

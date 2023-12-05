@@ -1,10 +1,12 @@
 .navbar {
-    background-color: #444b4e;
+    background-image: url("../../images/navbar.jpeg");
     padding: 1px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.145);
+    box-shadow: 0 4px 6px rgba(4, 41, 162, 0.807);
+    position: sticky;
+    top: 0;
     z-index: 100; /* Asegura que la barra de navegación esté en la parte superior */
   }
   
@@ -41,6 +43,6 @@
   }
   
   .navbar-links a:hover {
-    color: #FFA500; /* Color naranja al pasar el mouse */
+    color: #251ab4; /* Color naranja al pasar el mouse */
   }
   

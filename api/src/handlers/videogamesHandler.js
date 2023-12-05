@@ -1,19 +1,25 @@
-const { getVideogames , createVideogame, deleteVideogame, getVideogameByID } = require("../controllers/videogamesControllers");
+const { getVideogames , createVideogame, deleteVideogame, getVideogameByID, getVideogamesByName } = require("../controllers/videogamesControllers");
 
 const getVideogamesHandler = async ( req , res ) => {
     try {
         const { name } = req.query;
-        const response = await getVideogames(name);
+        let response = [];
+        if(name){
+            response = await getVideogamesByName(name)
+        } else {
+            response = await getVideogames();
+        }
         res.status(200).json(response)
     } catch (error) {
+        console.log(error)
         res.status(400).json({ error: error.message })
     }
 }
 
 const createVideogameHandler = async ( req , res ) => {
     try {
-        const { name , description , platforms , image , date , rating , genres } = req.body
-        const response = await createVideogame( name , description , platforms , image , date , rating , genres );
+        const { name , description , platform , image , date , rating , genres } = req.body
+        const response = await createVideogame( name , description , platform , image , date , rating , genres );
         res.status(201).json(response)
     } catch (error) {
         res.status(400).json({ error: error.message })

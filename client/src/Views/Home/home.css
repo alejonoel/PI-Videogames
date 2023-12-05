@@ -4,10 +4,110 @@
     min-height: 100vh;
     color: #fff; /* Color del texto */
     position: relative;
-    background-image: url("../../../public/silver3.jpg");
-    background-attachment: fixed;; 
     background-size: cover; /* Ajusta la imagen al tamaño del contenedor sin distorsionar */
     background-position: center; /* Centra la imagen en el contenedor */
     width: 100%; /* Asegura que el contenedor tenga un ancho del 100% */
     height: 100vh; /* Asegura que el contenedor tenga una altura del 100% del viewport */
+}
+
+.home-container {
+  display: flex; /* Utiliza Flexbox */
+  background-color: #200444;
+}
+
+/* videogame-sidebar.css */
+.videogame-sidebar {
+  background-image: url("../../images/sidebar.jpeg");
+  color: #6224ba;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 30rem;
+  position: sticky; /* Hace que el elemento sea fijo */
+  top: 0;
+}
+
+.videogame-sidebar h4 {
+  margin: 10px 0;
+}
+
+.videogame-sidebar select,
+.videogame-sidebar button {
+  background-color: #8040d9b6;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.videogame-sidebar select {
+  width: 100%;
+}
+
+.videogame-sidebar button:hover {
+  background-color: #b30054c1;
+}
+
+.home-content {
+  display: flex;
+  flex-wrap: wrap; /* Las tarjetas se envolverán si es necesario */
+  gap: 10px; /* Espacio entre las tarjetas */
+  padding: 20px; /* Espacio interior para las tarjetas */
+  color: #fff;
+  flex-grow: 1; /* El contenido ocupará el espacio restante */
+}
+  
+/* Estilo para el contenedor de los botones "prev" y "next" */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  align-items: center; /* Centra los botones verticalmente */
+  margin-top: 20px; /* Agrega un margen superior para la distancia */
+}
+
+.button-container button {
+  background-color: #ce48c9; /* Color de fondo del botón */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px; /* Agrega un margen entre los botones */
+}
+
+.button-container button:hover {
+  background-color: #009089; /* Color de fondo del botón al pasar el mouse */
+}
+
+
+/* Estilo para el loading */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(19, 2, 75, 0.581); /* Borde claro */
+  border-top: 4px solid #e91f5b; /* Borde azul */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite; /* Animación de giro */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

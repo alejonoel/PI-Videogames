@@ -4,8 +4,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #1c1c1c; /* Color de fondo oscuro */
-    color: #fff; /* Color del texto */
+    background-image: url('../../images/navbar.jpeg');
+    color: white; /* Color del texto */
+
     max-width: 100%; /* Ancho máximo */
     min-height:88.5vh;
     overflow: auto; /* Habilita barras de desplazamiento si es necesario */
@@ -13,10 +14,9 @@
   
   /* CSS para el formulario */
   .form {
-    background-color: #333; /* Fondo del formulario */
+    background-color: rgba(12, 10, 59, 0.617); /* Aquí puedes ajustar el valor alpha (0.5 en este caso) para controlar la transparencia */
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(7, 13, 84, 0.629);
     width: 100%; /* Ancho máximo */
     max-width: 1000px; /* Ancho máximo */
     display: flex;
@@ -49,10 +49,10 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #555;
-    border-radius: 5px;
-    background-color: #222;
-    color: #fff;
+    box-shadow: 0 0 10px rgba(5, 13, 102, 0.566);
+    border: 1px solid #251ab4;
+    background-color: #e2dcda;
+    color: #251ab4;
   }
 
   /* Estilo para el campo de fecha */
@@ -60,10 +60,9 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #555;
-    border-radius: 5px;
-    background-color: #222;
-    color: #fff;
+    border: 1px solid #251ab4;
+    background-color: #e2dcda;
+    color: #251ab4;
   }
 
   /* Estilo para el campo "Rating" de tipo número */
@@ -71,10 +70,9 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #555;
-    border-radius: 5px;
-    background-color: #222;
-    color: #fff;
+    border: 1px solid #251ab4;
+    background-color: #e2dcda;
+    color: #251ab4;
   }
 
   /* Estilo para los botones del campo "Rating" de tipo número */
@@ -84,9 +82,9 @@
   margin: 2px; /* Espacio alrededor de los botones */
   width: 20px; /* Ancho de los botones */
   height: 20px; /* Altura de los botones */
-  border: 1px solid #555; /* Borde de los botones */
-  background-color: #222; /* Color de fondo de los botones */
-  color: #fff; /* Color del contenido de los botones */
+  border: 1px solid #251ab4; /* Borde de los botones */
+  background-color: #ce48c9; /* Color de fondo de los botones */
+  color: #251ab4; /* Color del contenido de los botones */
   font-size: 1px; /* Tamaño del texto en los botones */
 }
 
@@ -106,16 +104,72 @@
 
   /* Estilo para el botón de enviar */
   .form input[type="submit"] {
-    background-color: #007bff; /* Color de fondo del botón */
+    background-color: #ce48c9; /* Color de fondo del botón */
     color: #fff;
     padding: 10px 15px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
-  .form input[type="submit"]:hover {
-    background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
-  }
+
+
+  /* Estilo para el botón de enviar habilitado */
+.form input[type="submit"]:enabled {
+  background-color: #009089; /* Color de fondo del botón cuando esté habilitado */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Estilo para el botón de enviar cuando esté deshabilitado */
+.form input[type="submit"]:disabled {
+  background-color: #ce48c9; /* Color de fondo del botón cuando esté deshabilitado */
+  color: #ccc; /* Color del texto cuando esté deshabilitado */
+  cursor: not-allowed; /* Cambiar el cursor a "no permitido" */
+}
+
   
+/* Estilo para los contenedores de elementos */
+.display-container {
+  display: flex;
+  flex-wrap: wrap; /* Para que los elementos se envuelvan si hay demasiados */
+  gap: 2px; /* Espacio entre los elementos */
+}
+
+/* Estilo para el contenedor de opciones seleccionadas */
+.display-options {
+  display: flex;
+  flex-wrap: wrap; /* Para que las opciones se muestren en línea y se envuelvan si es necesario */
+  gap: 5px; /* Espacio entre las opciones seleccionadas */
+}
+
+/* Estilo para cada elemento (plataforma o género) */
+.display-item {
+  display: flex;
+  align-items: center; /* Para centrar el texto y el botón verticalmente */
+  background-color: #5066d1; /* Color de fondo */
+  padding: 5px; /* Espacio dentro del elemento */
+}
+
+/* Estilo para el botón dentro de cada elemento */
+.display-item button {
+  background-color: #ff0000; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+  border: none;
+  border-radius: 50%; /* Hacer el botón redondo */
+  width: 20px; /* Tamaño del botón */
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón sobre el botón */
+  margin-left: 5px; /* Espacio entre el botón y el texto */
+}
+
+/* Estilo para el botón al pasar el ratón sobre él */
+.display-item button:hover {
+  background-color: #cc0000; /* Cambiar el color de fondo al pasar el ratón */
+}

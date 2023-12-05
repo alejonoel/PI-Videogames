@@ -1,2 +1,11 @@
 export const GET_GAMES = "GET_GAMES";
 export const GET_GENRES = "GET_GENRES";
+export const GET_PLATFORM = "GET_PLATFORM";
+export const GET_GAMES_BY_ID = 'GET_GAMES_BY_ID'
+export const POST_VIDEOGAME = "POST_VIDEOGAME";
+export const PAGINATE = "PAGINATE";
+export const DELETE = "DELETE";
+export const SEARCH = "SEARCH";
+export const FILTER = "FILTER";
+export const ORDER = "ORDER";
+export const RESET = "RESET";

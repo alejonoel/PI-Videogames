@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import joystick from "../../images/joystick.webp";
 import './navbar.css';
 
 function NavBar() {
@@ -7,7 +8,7 @@ function NavBar() {
     <div className="navbar">
       <div className="navbar-logo">
         <Link to={"/"}>
-          <img src="https://easyskinz.com/cdn/shop/products/titanium_54a1998d-ecfc-48b8-9c85-67c3ac2bb7a0.png?v=1644232047&width=1080" alt="" />
+          <img src={joystick} alt="" />
         </Link>
       </div>
       <ul className="navbar-links">
@@ -15,7 +16,7 @@ function NavBar() {
           <Link to={"/home"}>Home</Link>
         </li>
         <li className="navbar-link">
-          <Link to={"/form"}>Create Activity</Link>
+          <Link to={"/form"}>Add New Game</Link>
         </li>
       </ul>
     </div>
